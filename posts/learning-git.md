@@ -1,3 +1,10 @@
+---
+title: Favorite repo Git 
+slug: Favorite Github repos of 2021 to get a job 
+featured_image: picture-of-gitman.jpg
+date: "2020-03-02 03:33:14"
+---
+
 #Learning Git, a new Approach
 
 ##This is a blog about Javascript Frameworks

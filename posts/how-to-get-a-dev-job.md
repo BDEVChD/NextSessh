@@ -1,3 +1,11 @@
+---
+title: How to get into a company 
+slug: Favorite Github repos of 2021 to get a job 
+featured_image: nextlanding.png
+date: "2020-02-02 03:33:14"
+---
+
+
 #How to get a Dev Job
 
 ##This is a blog about Javascript Frameworks

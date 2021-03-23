@@ -9,6 +9,9 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "gray-matter": "^4.0.2",
+    "marked": "^2.0.1",
+    "moment": "^2.29.1",
     "next": "10.0.9",
     "react": "17.0.1",
     "react-dom": "17.0.1",
