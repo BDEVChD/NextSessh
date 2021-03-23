@@ -1,7 +1,7 @@
 ---
 title: Top of the Javascript and Node Frameworks
-slug: node-people 
-featured_image: picture-of-Nodeperson.jpg
+slug: top-javascript-frameworks
+featured_image: nextlanding.png
 date: "2020-05-02 03:33:14"
 ---
 

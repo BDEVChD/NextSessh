@@ -6,7 +6,7 @@ import path from 'path';
 import moment from 'moment';
 import matter from 'gray-matter';
 
-export default function Home() {
+export default function Home({posts}) {
   return (
     <Layout>
       <Head>
@@ -30,15 +30,21 @@ export default function Home() {
         <div id="main">
           {/* One */}
           <section id="one" className="tiles">
-            <article>
-              <span className="image">
-                <img src="images/pic01.jpg" alt="" />
-              </span>
-              <header className="major">
-                <h3><a href="landing.html" className="link">Aliquam</a></h3>
-                <p>Ipsum dolor sit amet</p>
-              </header>
-            </article>
+            {posts.map((post) => (
+               <article>
+               <span className="image">
+                 <img src={`/images/${post.featured_image}`} alt="" />
+               </span>
+               <header className="major">
+                 <h3>
+                   <a href={`/${post.slug}`} className="link">
+                     {post.title}
+                   </a>
+                  </h3>
+               </header>
+             </article>
+            ))}
+           
           </section>
           {/* Two */}
           <section id="two">
@@ -75,6 +81,7 @@ export const getStaticProps = async () => {
         title: postData.data.title,
         featured_image: postData.data.featured_image, 
         data: postData.data.date,
+        slug: postData.data.slug
       };
     });
     
@@ -87,6 +94,10 @@ console.log(fs.readdirSync("posts"));
 sortPosts(); 
 
 return {
-  props: {}
+  props:{
+    posts: sortPosts(),
+  }
+  
+  
 }
 }
